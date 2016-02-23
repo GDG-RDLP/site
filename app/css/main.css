@@ -1,0 +1,238 @@
+/*
+* Base structure
+*/
+
+/* colores gdg
+
+rojo: rgba(221, 78, 66, 1)
+azul: rgba(81, 143, 245, 1)
+verde: rgba(23, 160, 93, 1)
+amarillo: rgba(255, 194, 10, 1)
+
+*/
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+  /*background: url(../img/bg.jpg) no-repeat center center;
+  background-size: cover;*/
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  color: #000;
+  text-align: center;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  background-color: rgba(255,255,255, .9);
+  /*-webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+  box-shadow: inset 0 0 5rem rgba(0,0,0,.5);*/
+}
+.container-full {
+  width: 100%;
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+.container-full .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.container-full .row .col-xs-12 {
+  padding-right: 0;
+  padding-left: 0;
+}
+.topbar {
+  background-color: #fff;
+}
+.sticky {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 60px;
+  transition: all 0.4s ease;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+.logo {
+  width: 300px;
+  height: 100px;
+  background:url(../img/gdgrdlp.png) no-repeat center center;
+  background-size: cover;
+  float: left;
+}
+.sticky .logo {
+  width: 200px;
+  height: 60px;
+}
+.nav {
+  float: right;
+  margin-top: 42px;
+}
+.sticky .nav {
+  margin-top: 17px;
+}
+.nav a {
+  color: #4F8EF5;
+  margin-right: 10px;
+}
+.banner {
+  color: #fff;
+  height: 400px;
+  background-image: url(../img/gdg.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto Condensed', sans-serif;*/
+}
+.banner .text {
+  padding-top: 130px;
+  text-shadow: 0 0  10px rgba(0, 0, 0, 1);
+}
+.banner .text h1 {
+  font-size: 100px;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin:0;padding:0;
+}
+.banner .text p {
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin:0;padding:0 0 10px;
+}
+.separadores {
+  background-color: rgba(81, 143, 245, 1);
+  border-top: 2px solid rgba(39, 101, 203, 1);
+  padding: 20px;
+}
+.separadores h2 {
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-shadow: 0 0  5px rgba(0, 0, 0, .3);
+  margin:0;padding:0;
+}
+.evento {
+  padding: 50px 0;
+  text-align: left;
+}
+.evento-sinoposis {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+.evento-descripcion {
+  padding: 20px 0;
+}
+.evento-img {
+  background-image: url(../img/girlscode.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 130%;
+  background-size: cover;
+  height: 400px;
+}
+.evento-img-host {
+  background: url(../img/medrano-utn.jpg) no-repeat 50% 50%;
+  background-size: 100%;
+  width: 100%;
+  height: 350px;
+  transition: all .5s;
+}
+.evento-img-host:hover {
+  background-size: 105%;
+}
+.evento-speakers {
+  padding: 50px 0;
+}
+.evento-registro {
+  text-align: center;
+  padding: 20px;
+}
+.evento-organizadores {
+  padding: 30px 0;
+}
+.evento-org {
+  text-align: left;
+  padding: 20px 0;
+}
+.evento-org img {
+  margin-right: 20px;
+}
+.fa-twitter {
+  color: #55acee;
+}
+.fa-youtube {
+  color: #bb0000;
+}
+/* cards */
+.card-deck-wrapper {
+  margin-top: 30px
+}
+.card-img-top {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size:  100%;
+  width: 100%;
+  height: 150px;
+  transition: all .4s;
+}
+.card-img-top:hover {
+  background-size: 105%;
+}
+.calendar-day {
+  border-radius: 2px;
+  border:1px solid rgba(221, 78, 66, 1);
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  margin: 0 10px 0 0;
+  padding: 5px;
+  width: 50px;
+  float: left;
+}
+.calendar-day span {
+  display: block
+}
+.calendar-day .dia {
+  font-size: 22px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(221, 78, 66, 1);
+}
+.calendar-day .mes {
+  font-size: 14px;
+  padding-top: 3px;
+}
+.text-simple {
+  text-align: left;
+  padding: 30px 0;
+}
+.gdgiso {
+  margin: 0 20px 20px;
+  width: 300px;
+}
+.managers {
+  padding: 30px 0;
+}
+.manager {
+  text-align: center;
+  margin: 20px 0 10px;
+}
+.manager .nombre {
+  font-weight: 700;
+}
+.manager .img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+.mastfoot {
+  margin-top: 50px;
+}
