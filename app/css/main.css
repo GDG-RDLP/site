@@ -77,9 +77,14 @@ i {
 .sticky .nav {
   margin-top: 17px;
 }
-.nav a {
-  color: #4F8EF5;
+.nav a:link, .nav a:visited {
+  color: #555;
   margin-right: 10px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.nav a:hover, .nav a:active, .nav a.active {
+  color: #4F8EF5;
 }
 .banner {
   color: #fff;
@@ -272,6 +277,7 @@ h3 {
 .contacto-bg {
   background-color: #f4f4f4;
   padding-bottom: 50px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .gdgiso {
   margin: 0 20px 20px;
@@ -399,7 +405,7 @@ h3 {
     margin-bottom: 15px;
   }
   .gdgiso {
-    width: 250px;
+    width: 260px;
   }
   #mc_embed_signup .mc-field-group {
     width: 90%;
