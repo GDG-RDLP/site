@@ -1,7 +1,6 @@
 /*
 * Base structure
 */
-
 /* colores gdg
 
 rojo: rgba(221, 78, 66, 1)
@@ -10,26 +9,28 @@ verde: rgba(23, 160, 93, 1)
 amarillo: rgba(255, 194, 10, 1)
 
 */
-
 html,
 body {
   height: 100%;
   background-color: #fff;
   /*background: url(../img/bg.jpg) no-repeat center center;
   background-size: cover;*/
-  font-family: 'Open Sans', sans-serif;
-}
-body {
-  color: #000;
+  font-family: "Roboto", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  color: #4A5960;
+  -webkit-font-smoothing: antialiased;
   text-align: center;
 }
-
+i {
+  color: #2B85E7;
+}
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   width: 100%;
-  height: 100%; /* For at least Firefox */
+  height: 100%;
+  /* For at least Firefox */
   min-height: 100%;
-  background-color: rgba(255,255,255, .9);
+  background-color: rgba(255, 255, 255, 0.9);
   /*-webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
   box-shadow: inset 0 0 5rem rgba(0,0,0,.5);*/
 }
@@ -61,7 +62,7 @@ body {
 .logo {
   width: 300px;
   height: 100px;
-  background:url(../img/gdgrdlp.png) no-repeat center center;
+  background: url(../img/gdgrdlp.png) no-repeat center center;
   background-size: cover;
   float: left;
 }
@@ -82,7 +83,7 @@ body {
 }
 .banner {
   color: #fff;
-  height: 400px;
+  height: 100vh;
   background-image: url(../img/gdg.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -92,35 +93,35 @@ body {
   /*font-family: 'Roboto Condensed', sans-serif;*/
 }
 .banner .text {
-  padding-top: 130px;
-  text-shadow: 0 0  10px rgba(0, 0, 0, 1);
+  padding-top: 230px;
 }
 .banner .text h1 {
-  font-size: 100px;
-  font-family: 'Roboto Condensed', sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
-  margin:0;padding:0;
+  font-size: 100px;
+  font-weight: 300;
+  margin: 0;
 }
 .banner .text p {
   font-size: 20px;
   background-color: rgba(0, 0, 0, 0.5);
-  margin:0;padding:0 0 10px;
+  margin: 0;
+  padding: 0 0 10px;
 }
 .separadores {
-  background-color: rgba(81, 143, 245, 1);
+  background-color: #518ff5;
   background-image: url('../img/bg_pattern1.png'), url('../img/bg_pattern.png');
   background-origin: padding-box, padding-box;
   background-size: 680px 355px, 562px 350px;
   background-position: 50%;
-  border-top: 2px solid rgba(39, 101, 203, 1);
-  padding: 20px;
+  border-top: 2px solid #2765cb;
+  padding: 60px;
 }
 .separadores h2 {
   color: #fff;
-  font-size: 50px;
-  font-family: 'Roboto Condensed', sans-serif;
-  text-shadow: 0 0  5px rgba(0, 0, 0, .3);
-  margin:0;padding:0;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
 }
 .evento {
   padding: 50px 0;
@@ -129,6 +130,10 @@ body {
 .evento-sinoposis {
   background-color: rgba(0, 0, 0, 0.2);
   padding: 10px;
+}
+h3 {
+  font-size: 27px;
+  font-weight: 400;
 }
 .evento-descripcion {
   padding: 30px 0;
@@ -151,25 +156,50 @@ body {
 .evento-img-host:hover {
   background-size: 105%;
 }
+.evento-resumen {
+  padding-bottom: 20px;
+}
+.top20 {
+  padding-top: 20px;
+}
 .evento-speakers {
   padding: 30px 0;
+  padding-bottom: 30px;
 }
 .evento-registro {
   text-align: center;
   padding: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+}
+.linea {
+  border-bottom: 1px solid #ddd;
+}
+.evento-lugar {
+  padding: 20px;
+  padding-top: 40px;
+  border-bottom: 1px solid #ddd;
 }
 .evento-organizadores {
   padding: 30px 0;
+  text-align: center;
 }
 .evento-org {
-  text-align: left;
+  text-align: center;
   padding: 20px 0;
 }
 .evento-org img {
   margin-right: 20px;
+  height: 80px;
+  width: auto;
 }
 .evento-agenda {
   padding: 50px 0 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+.top50 {
+  padding-top: 75px;
 }
 .evento-agenda ul {
   list-style: none;
@@ -200,12 +230,12 @@ body {
 }
 /* cards */
 .card-deck-wrapper {
-  margin-top: 30px
+  margin-top: 30px;
 }
 .card-img-top {
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size:  100%;
+  background-size: 100%;
   width: 100%;
   height: 150px;
   transition: all .4s;
@@ -215,7 +245,7 @@ body {
 }
 .calendar-day {
   border-radius: 2px;
-  border:1px solid rgba(221, 78, 66, 1);
+  border: 1px solid #2B85E7;
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
   margin: 0 10px 0 0;
@@ -224,12 +254,12 @@ body {
   float: left;
 }
 .calendar-day span {
-  display: block
+  display: block;
 }
 .calendar-day .dia {
   font-size: 22px;
   font-weight: 700;
-  border-bottom: 1px solid rgba(221, 78, 66, 1);
+  border-bottom: 1px solid #dd4e42;
 }
 .calendar-day .mes {
   font-size: 14px;
@@ -245,7 +275,7 @@ body {
 }
 .gdgiso {
   margin: 0 20px 20px;
-  width: 300px;
+  width: 400px;
 }
 .managers {
   padding: 30px 0;
@@ -276,19 +306,19 @@ body {
   margin: 0 auto;
 }
 .newsletter {
-  text-align: left
+  text-align: left;
 }
 #mc-embedded-subscribe-form {
   padding: 0 !important;
 }
 #mc-embedded-subscribe {
-  margin: 0 !important
+  margin: 0 !important;
 }
 #mc_embed_signup .mc-field-group {
   width: 50%;
 }
 .indicates-required {
-  float:right;
+  float: right;
 }
 .container-foot {
   border-top: 1px solid #eee;
@@ -298,9 +328,8 @@ body {
 }
 .footlogo {
   padding: 0 0 20px;
+  margin-top: -20px;
 }
-
-@media (min-width: 34em) {}
 @media (max-width: 48em) {
   .separadores {
     padding: 10px;
@@ -310,16 +339,16 @@ body {
   }
   h2 {
     font-size: 1.5rem;
-}
-h3 {
+  }
+  h3 {
     font-size: 1.25rem;
-}
+  }
   .sticky {
-    position:inherit;
+    position: inherit;
   }
   header {
     overflow: hidden;
-    padding-bottom: 10px
+    padding-bottom: 10px;
   }
   .logo {
     width: 100%;
@@ -331,7 +360,7 @@ h3 {
   .nav {
     float: none;
     margin-top: 0;
-    margin-bottom: 15px
+    margin-bottom: 15px;
   }
   .nav a {
     font-size: 13px;
@@ -358,16 +387,16 @@ h3 {
   }
   .evento-img-host {
     height: 230px;
-}
-.evento-map iframe {
-  height: 230px;
-}
+  }
+  .evento-map iframe {
+    height: 230px;
+  }
   .evento-org img {
-    width: 250px
+    width: 250px;
   }
   .evento-colab img {
     width: 90px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
   }
   .gdgiso {
     width: 250px;
@@ -376,5 +405,3 @@ h3 {
     width: 90%;
   }
 }
-@media (min-width: 62em) {}
-@media (min-width: 75em) {}
