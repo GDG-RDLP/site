@@ -191,17 +191,19 @@ h3 {
 }
 .evento-org {
   text-align: center;
-  padding: 20px 0;
+  padding: 0;
 }
 .evento-org img {
   margin-right: 20px;
-  height: 80px;
+  margin-bottom: 20px;
+  height: 70px;
   width: auto;
 }
 .evento-colab {
   margin-bottom: 20px;
 }
 .evento-venue img {
+  margin: 0;
   height: 170px;
   width: auto;
 }
@@ -414,10 +416,10 @@ h3 {
     height: 230px;
   }
   .evento-org img {
-    width: 250px;
+    max-width: 250px;
   }
   .evento-colab img {
-    width: 90px;
+    max-width: 250px;
     margin-bottom: 15px;
   }
   .gdgiso {
