@@ -354,6 +354,11 @@ h3 {
   padding: 0 5px;
   margin: 0 5px;
 }
+.be-sponsor {
+  font-size: 120%;
+  text-align: center;
+  padding: 20px 0;
+}
 @media (max-width: 48em) {
   .separadores {
     padding: 10px;
