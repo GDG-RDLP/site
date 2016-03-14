@@ -359,6 +359,11 @@ h3 {
   text-align: center;
   padding: 20px 0;
 }
+
+/* eventos! */
+#evento01 {
+  display: none;
+}
 @media (max-width: 48em) {
   .separadores {
     padding: 10px;
