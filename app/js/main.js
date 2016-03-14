@@ -31,4 +31,21 @@ function init() {
       }
     }
   });
+
+  $('.eventop').on('click', function() {
+    evento_tmp = $(this);
+    eid = evento_tmp.data('evento');
+    text_mas = "(<em>ver +</em>)";
+    text_menos = "(<em>ver -</em>)";
+    evento = $('#'+eid);
+    if(evento.is(':visible')){
+      evento_tmp.html(text_mas);
+      evento.slideUp();
+    } else {
+      evento_tmp.html(text_menos);
+      evento.slideDown();
+    }
+    evento_tmp.blur();
+    return false;
+  })
 }

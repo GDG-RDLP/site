@@ -361,6 +361,20 @@ h3 {
 }
 
 /* eventos! */
+.past-events {
+  border:1px solid #ccc;
+  padding: 20px 10px;
+  margin: 60px 0 40px;
+  background-color: #f8f8f8;
+  text-align: left
+}
+.past-events .evento {
+    padding: 20px 0;
+}
+.past-events .evento-resumen {
+    cursor: pointer;
+}
+
 #evento01 {
   display: none;
 }
