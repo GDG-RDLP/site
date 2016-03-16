@@ -1,5 +1,13 @@
 $(document).on("ready", init);
 function init() {
+  window.addEventListener('focus', function() {
+    document.title = 'GDG Rio de la Plata';
+  });
+
+  window.addEventListener('blur', function() {
+    document.title = '¡Hey! Volvé, te extrañamos';
+  });
+
   var primeraVez = true;
   var fix = 180;
   $(window).scroll(function() {
