@@ -387,7 +387,7 @@ h3 {
     cursor: pointer;
 }
 
-#evento01 {
+#evento01, #evento02 {
   display: none;
 }
 @media (max-width: 48em) {
