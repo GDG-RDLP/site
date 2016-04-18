@@ -2,6 +2,7 @@ $(document).on("ready", init);
 function init() {
   window.addEventListener('focus', function() {
     document.title = 'GDG Rio de la Plata';
+    console.log("test git");
   });
 
   window.addEventListener('blur', function() {
